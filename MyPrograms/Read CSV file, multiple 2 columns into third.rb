@@ -4,7 +4,7 @@ require 'csv'
 multiplying_array = Array.new
 CSV.foreach("/home/rails/test2.csv" , converters: :numeric) do |row|
     multiplying_array<< row[1]*row[0]
- end
+end
 Dummy_array = CSV.read("/home/rails/test2.csv")
 Dummy_array.each do|row|
   row << multiplying_array.shift
