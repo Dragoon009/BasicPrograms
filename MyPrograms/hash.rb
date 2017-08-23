@@ -8,3 +8,4 @@ count[n]+=1
 end
 
 puts count
+#Using hash table, print the frequency of occurence of each character inside an array.

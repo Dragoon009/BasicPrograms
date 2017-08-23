@@ -21,6 +21,6 @@ CSV.open("/home/rails/test2.csv" , 'w') do |column3|
   Dummy_array.each { |r|
   column3 << r }
 end
-
+#Read from a CSV file, multiple two columns, and then write back to the CSV file.
 
 

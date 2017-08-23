@@ -8,3 +8,5 @@ array1.each do|row|
 end
 puts array1
 
+#Join 2 arrays without using inbuilt functions.
+

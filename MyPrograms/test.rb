@@ -5,3 +5,5 @@ def pyramid(height)
     puts '*' * (2 * n + 1)
   end
 pyramid 3
+#a program that prints a star pyramid.
+
