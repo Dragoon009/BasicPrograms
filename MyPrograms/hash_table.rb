@@ -1,4 +1,5 @@
 #!/usr/bin/ruby
+#Using hash table, print the frequency of occurence of each character inside an array
 Sample_array = %w[ fcb rma fcb ars dor]
 count = Hash.new(0)
 Sample_array.each do |n|
