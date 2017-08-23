@@ -8,4 +8,4 @@ count[n]+=1
 end
 
 puts count
-
+#{"fcb"=>2, "rma"=>1, "ars"=>1, "dor"=>1}
