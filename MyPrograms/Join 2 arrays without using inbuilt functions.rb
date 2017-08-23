@@ -6,7 +6,6 @@ array2 = ["another", "10"]
 array1.each do|row|
   row << array2.shift
 end
-puts array1
+print array1
 
-#Join 2 arrays without using inbuilt functions.
-
+#["some", "thing", "another", "10"]
