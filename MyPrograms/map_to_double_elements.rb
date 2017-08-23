@@ -1,4 +1,5 @@
 #!/usr/bin/ruby
+#map to double all elements in array
 sample_array = [1,2,3,4,5]
 sample_array.map!{|num| num * 2}
 print sample_array
