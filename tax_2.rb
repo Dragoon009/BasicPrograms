@@ -100,7 +100,6 @@ class Tax_calc
    dummy_number2 = (dummy_number*2).ceil.to_f / 2
    dummy_number2 = dummy_number2 *10
    dummy_number3 = dummy_number * 10
-   puts dummy_number3 , dummy_number2
    @sales_tax = (@sales_tax * 100) - dummy_number3 + dummy_number2
    @sales_tax = @sales_tax / 100
    output
