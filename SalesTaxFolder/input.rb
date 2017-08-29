@@ -32,13 +32,9 @@ module SalesTaxCalc
       end 
       @values.each do |n|
         @product_quantity << n.shift  # Storing product quantity in an array
-      end
-      @values.each do |n|
         @product_price << (n.pop).to_f   #Converting product prices to floating point
-      end
-      @values.each do |m|
-        m.pop
-        (@dummy_product_name << m).to_s 
+        n.pop
+        (@dummy_product_name << n).to_s 
       end
       @dummy_product_name.each do|m|
         m.each do|o|
