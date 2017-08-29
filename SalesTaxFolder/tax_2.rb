@@ -8,7 +8,7 @@ name = input_object.inputname
 
 calc_object = SalesTaxCalc::TaxCalc.new
 cost = calc_object.algo_method(name,price)
-#tax = calc_object.round
+tax = calc_object.round
 
 
 output_object = SalesTaxCalc::TaxCalc.new
