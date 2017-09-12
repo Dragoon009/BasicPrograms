@@ -1,0 +1,27 @@
+<% @page_title = "UserAuth" %>
+<div class="">
+  <h1>Please enter details:</h1>
+  <%= form_for(@user) do |f| %>
+    
+    <p> Name:</br> <%= f.text_field :name%> </p>
+    <p> Email:</br> <%= f.text_field :email%> </p>
+    <div class="field">
+      <%= collection_check_boxes(:user, :skill_ids, @skill, :id, :skill) %>                    
+    </div>
+    <p> Password:</br> <%= f.password_field :password%></p>
+    <p> Password Confirmation:</br> <%= f.password_field :password_confirmation%> </p>
+    <%= f.submit "Submit" %>
+  <% end %>
+   
+   <% if @user.errors.any? %>
+    <ul class="User_Errors">
+    <% for message_error in @user.errors.full_messages %>
+      <li> * <%= message_error %></li>
+    <% end %>
+    </ul>
+  <% end %>
+</div>
+
+  
+
+

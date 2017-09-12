@@ -1,0 +1,22 @@
+<% provide(:title, 'All users') %>
+<h1>All users</h1>
+
+<table>
+  <tr>
+    <th>Users</th>
+    <th colspan="2"></th>
+  </tr>
+	<% @users.each do |user| %>
+  	<tr>
+  		<li>
+    	<td><%= user.name %></td>
+    	<td><%= user.email%></td>
+      <td><%= user.skills.map {|skill| skill.skill}.join(', ') %></td>
+    	<td><%= link_to "delete", user, method: :delete,data: { confirm: "You sure?" } %> </td>
+    	</li>
+    </tr>
+  <% end %>
+</table>
+<br>  
+<%= link_to "Back >>", redirect_to %>
+</ul>
